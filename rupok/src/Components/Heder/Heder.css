@@ -1,0 +1,22 @@
+.heder-section {
+    background: #1C2B35;
+    padding: 10px 40px;
+    
+}
+.heder-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heder-section nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.heder-section nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 30px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}

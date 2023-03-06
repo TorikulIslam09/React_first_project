@@ -1,5 +1,9 @@
 import React from 'react';
-import './Singleproduct.css'
+import './Singleproduct.css';
+import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 const Singleproduct = (props) => {
     const {singleproduct, Addtocart} = props;
@@ -22,7 +26,9 @@ const Singleproduct = (props) => {
             <div className="footer">
                 {/* <p onClick={()=>props.Addtocart(props.singleproduct)}>Add to card </p>
                  */
-                <p onClick={()=>Addtocart(singleproduct)}>Add to card </p>}
+                <p onClick={()=>Addtocart(singleproduct)}>Add to card {<FontAwesomeIcon icon={faCoffee} />}</p>
+                
+                }
             </div>
         </div>
     );
